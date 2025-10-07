@@ -1,20 +1,19 @@
 import React from "react";
 import {Routes, Route } from "react-router-dom";
 import Home from "./home";
-import BasicExample from "./home";
-import { useRef } from "react";
+import NavBar from "./home";
 
-const divRef = useRef
 
 class App extends React.Component {
+
   render() {
     return(
       <>
         <div>
           <h1>Bienvenue sur mon application!</h1>
         </div>
-        <div ref={divRef} className="App">
-          <BasicExample />
+        <div className="App">
+          <NavBar />
 
           <Routes>
 
