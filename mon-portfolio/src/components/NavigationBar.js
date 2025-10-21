@@ -1,24 +1,37 @@
-import { Navbar, Nav, Container } from 'react-bootstrap';
-import { Link } from 'react-router-dom';
+import React from 'react';
+import { NavLink } from 'react-router-dom';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
-function NavigationBar() {
+const NavigationBar = () => {
   return (
-    <Navbar bg="dark" variant="dark" expand="lg" sticky="top">
-      <Container>
-        <Navbar.Brand as={Link} to="/">Juan</Navbar.Brand>
-        <Navbar.Toggle aria-controls="basic-navbar-nav" />
-        <Navbar.Collapse id="basic-navbar-nav">
-          <Nav className="ms-auto">
-            <Nav.Link as={Link} to="/">Accueil</Nav.Link>
-            <Nav.Link as={Link} to="/services">Services</Nav.Link>
-            <Nav.Link as={Link} to="/portfolio">Portfolio</Nav.Link>
-            <Nav.Link as={Link} to="/contact">Contact</Nav.Link>
-            <Nav.Link as={Link} to="/mentions">Mentions légales</Nav.Link>
-          </Nav>
-        </Navbar.Collapse>
-      </Container>
-    </Navbar>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div className="container-fluid">
+        <NavLink className="navbar-brand" to="/">JuanDev</NavLink>
+        <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+          <span className="navbar-toggler-icon"></span>
+        </button>
+        <div className="collapse navbar-collapse" id="navbarNav">
+          <ul className="navbar-nav ms-auto">
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/">Home</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/services">Services</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+            </li>
+            <li className="nav-item">
+              <NavLink className="nav-link" to="/mentions-legales">Mentions légales</NavLink>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
   );
-}
+};
 
 export default NavigationBar;
