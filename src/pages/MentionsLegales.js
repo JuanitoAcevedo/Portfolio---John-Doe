@@ -1,10 +1,16 @@
 import React from 'react';
 import { Container, Accordion } from 'react-bootstrap';
 import BlueDivider from '../components/BlueDivider';
+import { Helmet } from 'react-helmet-async';
+
 
 const MentionsLegales = () => {
   return (
     <Container className="py-5">
+      <Helmet>
+        <meta name="robots" content="noindex, nofollow" />
+        <title>Mentions légales</title>
+      </Helmet>
       <h2 className="text-center mb-4">Mentions légales</h2>
       <BlueDivider centered width='50%' />
 
@@ -36,13 +42,21 @@ const MentionsLegales = () => {
         <Accordion.Item eventKey="2">
           <Accordion.Header>Crédits</Accordion.Header>
           <Accordion.Body>
-            Ce site a été réalisé par John Doe, étudiant de Cauffrie Expérience de formation.<br /><br />
-            Les images utilisées sur ce site sont issues des sites suivants et sont libres de droit :
-            <ul>
-              <li>Pixabay</li>
-              <li>Pexels</li>
-            </ul>
-            La favico de ce site a été créée sur le site John Doe Icon Maker avec l'option « Polices ».
+           <p>Ce site a été réalisé par John Doe, étudiant au&nbsp;
+              <a href= "https://www.centre-europeen-formation.fr" target= "_blank" rel= "noopener noreferrer"> 
+                Centre Européen de Formation
+              </a>
+            </p> 
+            
+            <p>
+              Les images utilisées sur ce site sont libre de droits et ont été obtenues sur le site&nbsp;
+               <a href='https://pixabaycom' target='_blank' rel='noopener noreferrer'>Pixabay</a>
+            </p>
+            <p>
+               La favicon de ce site a été créée sur le site&nbsp;
+               <a href='https://www.flaticon.com/fr/' target='_blank' rel='noopener noreferrer'>John Doe Icon Maker avec l'option « Polices »</a>
+            </p>
+           
           </Accordion.Body>
         </Accordion.Item>
       </Accordion>
