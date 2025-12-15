@@ -1,6 +1,6 @@
 import React from 'react';
 import { Container, Accordion } from 'react-bootstrap';
-import BlueDivider from '../components/BlueDivider'; // adapte le chemin si besoin
+import BlueDivider from '../components/BlueDivider';
 
 const MentionsLegales = () => {
   return (

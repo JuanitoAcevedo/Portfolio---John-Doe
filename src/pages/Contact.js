@@ -51,13 +51,13 @@ function Contact() {
           <Card className="mb-3">
             <Card.Body>
               <Card.Text>
-                <ContactItem icon={FaUser}>Juan Dupont</ContactItem>
+                <ContactItem icon={FaUser}>John Doe</ContactItem>
                 <ContactItem icon={FaMapMarkerAlt}>42 rue Laure Diebold, 69009 Lyon</ContactItem>
                 <ContactItem icon={FaPhoneAlt}>
                   <a href="tel:0123456789">0123456789</a>
                 </ContactItem>
                 <ContactItem icon={FaEnvelope}>
-                  <a href="mailto:juan.dupont@gmail.com">juan.dupont@gmail.com</a>
+                  <a href="mailto:john.doe@gmail.com">john.doe@gmail.com</a>
                 </ContactItem>
               </Card.Text>
             </Card.Body>
