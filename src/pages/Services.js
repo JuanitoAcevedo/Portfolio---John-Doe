@@ -3,6 +3,7 @@ import { Container, Row, Col, Card } from 'react-bootstrap';
 import { FaPaintBrush, FaCode, FaSearch } from 'react-icons/fa';
 import headerImage from '../assets/images/banner.jpg';
 import BlueDivider from '../components/BlueDivider';
+import ServiceCard from '../components/ServiceCard';
 
 const Services = () => {
   return (
@@ -29,39 +30,27 @@ const Services = () => {
 
         <Row className="g-4">
           <Col xs={12} md={4}>
-            <Card className="h-100 border-0 shadow-sm text-center">
-              <Card.Body>
-                <FaPaintBrush size={40} color="#003d99" className="mb-3" />
-                <Card.Title>UX Design</Card.Title>
-                <Card.Text className="text-muted">
-                  UX Design est une discipline centrée sur la conception d’interfaces digitales. Elle vise à rendre l’expérience utilisateur la plus agréable et la plus intuitive possible.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+            <ServiceCard
+              title="UX Design"
+              description="UX Design est une discipline centrée sur la conception d’interfaces digitales..."
+              icon={<FaPaintBrush size={40} color="#003d99" />}
+            />
           </Col>
 
           <Col xs={12} md={4}>
-            <Card className="h-100 border-0 shadow-sm text-center">
-              <Card.Body>
-                <FaCode size={40} color="#003d99" className="mb-3" />
-                <Card.Title>Développement web</Card.Title>
-                <Card.Text className="text-muted">
-                  Le développement web s’appuie sur la connaissance des différents langages de programmation (HTML, CSS, JS, etc.) et des frameworks (Bootstrap, React, Angular, etc.).
-                </Card.Text>
-              </Card.Body>
-            </Card>
+          <ServiceCard
+              title="Développement Web"
+              description="Le développement web s’appuie sur la connaissance des différents langages de programmation (HTML, CSS, JS, etc.) et des frameworks (Bootstrap, React, Angular, etc.)."
+              icon={<FaPaintBrush size={40} color="#003d99" />}
+            />
           </Col>
 
           <Col xs={12} md={4}>
-            <Card className="h-100 border-0 shadow-sm text-center">
-              <Card.Body>
-                <FaSearch size={40} color="#003d99" className="mb-3" />
-                <Card.Title>Référencement</Card.Title>
-                <Card.Text className="text-muted">
-                  Le référencement naturel (SEO) est un concept fondamental pour améliorer la visibilité de votre site sur les moteurs de recherche. Il est basé sur la qualité du contenu et la structure du site.
-                </Card.Text>
-              </Card.Body>
-            </Card>
+           <ServiceCard
+              title="Référencement"
+              description="Le référencement naturel (SEO) est un concept fondamental pour améliorer la visibilité de votre site sur les moteurs de recherche. Il est basé sur la qualité du contenu et la structure du site."
+              icon={<FaPaintBrush size={40} color="#003d99" />}
+            />
           </Col>
         </Row>
       </Container>
