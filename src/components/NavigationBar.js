@@ -13,19 +13,44 @@ const NavigationBar = () => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ms-auto">
             <li className="nav-item">
-              <NavLink className="nav-link" to="/">Home</NavLink>
+              <NavLink 
+                to="/" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active-link" : "")}
+              >
+                Home
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/services">Services</NavLink>
+              <NavLink 
+                to="/services" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active-link" : "")}
+              >
+                Services
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/portfolio">Portfolio</NavLink>
+              <NavLink 
+                to="/portfolio" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active-link" : "")}
+              >
+                Portfolio
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/contact">Contact</NavLink>
+              <NavLink 
+                to="/contact" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active-link" : "")}
+              >
+                Contact
+              </NavLink>
             </li>
             <li className="nav-item">
-              <NavLink className="nav-link" to="/mentions-legales">Mentions légales</NavLink>
+              <NavLink 
+                to="/mentions-legales" 
+                className={({ isActive }) => "nav-link" + (isActive ? " active-link" : "")}
+              >
+                Mentions légales
+              </NavLink>
             </li>
           </ul>
         </div>
