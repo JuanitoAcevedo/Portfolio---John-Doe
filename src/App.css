@@ -36,3 +36,13 @@
     transform: rotate(360deg);
   }
 }
+
+.footer-icons a i {
+  transition: transform 0.3s ease, filter 0.3s ease;
+  display: inline-block; /* nécessaire pour que transform fonctionne */
+}
+
+.footer-icons a:hover i {
+  transform: scale(1.3);       /* zoom au survol */
+  filter: brightness(1.5);     /* éclaircissement */
+}
