@@ -46,3 +46,11 @@
   transform: scale(1.3);       /* zoom au survol */
   filter: brightness(1.5);     /* éclaircissement */
 }
+
+footer a {
+  transition: font-weight 0.2s ease-in-out;
+}
+
+footer a:hover {
+  font-weight: bold;
+}
