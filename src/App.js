@@ -1,6 +1,6 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
-import 'bootstrap-icons/font/bootstrap-icons.css';
+import 'bootstrap-icons/font/bootstrap-icons.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import NavigationBar from './components/NavigationBar';
 import Footer from './components/Footer';
