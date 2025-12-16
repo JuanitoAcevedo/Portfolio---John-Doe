@@ -1,3 +1,12 @@
+body {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 400;
+}
+
+h1, h2, h3 {
+  font-family: 'Nunito Sans', sans-serif;
+  font-weight: 600;
+}
 .App {
   text-align: center;
 }
@@ -35,6 +44,11 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.nav-link.active-link {
+  font-weight: 600;       
+  text-decoration: underline;
 }
 
 .footer-icons a i {
