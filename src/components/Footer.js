@@ -9,7 +9,7 @@ const Footer = () => {
         <div className="row">
           {/* Colonne 1 */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold">John Doe</h5>
+            <h3 className="fw-bold">John Doe</h3>
             <ul className="list-unstyled">
               <li><i className="bi bi-house me-2"></i> 40 rue Laure Diebold</li>
               <li><i className="bi bi-geo-alt me-2"></i> 69000 Lyon, France</li>
@@ -48,7 +48,7 @@ const Footer = () => {
 
           {/* Colonne 2 */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold">Liens utiles</h5>
+            <h3 className="fw-bold">Liens utiles</h3>
             <ul className="list-unstyled">
               <li><Link to="/" className="text-white text-decoration-none" rel='nofollow'>Accueil</Link></li>
               <li><Link to="/services" className="text-white text-decoration-none" rel='nofollow'>Services</Link></li>
@@ -60,7 +60,7 @@ const Footer = () => {
 
           {/* Colonne 3 */}
           <div className="col-md-4 mb-4">
-            <h5 className="fw-bold">Mes dernières réalisations</h5>
+            <h3 className="fw-bold">Mes dernières réalisations</h3>
             <ul className="list-unstyled">
               <li><Link to="#" className="text-white text-decoration-none" rel='nofollow'>Portfolio React 2025</Link></li>
               <li><Link to="#" className="text-white text-decoration-none" rel='nofollow'>Reproduction d'un site fictif Probeats</Link></li>

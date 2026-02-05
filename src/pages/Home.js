@@ -34,7 +34,7 @@ const Home = () => {
         }}
       >
         <h1 className="display-4 fw-bold">Bonjour, je suis Juan</h1>
-        <h3 className="mt-3">Développeur web full stack</h3>
+        <h2 className="mt-3">Développeur web full stack</h2>
         
         {/* Bouton qui ouvre la modale */}
         <Button
